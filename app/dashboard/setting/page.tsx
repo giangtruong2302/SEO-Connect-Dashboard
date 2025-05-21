@@ -430,8 +430,8 @@ export default function ProfilePage() {
                   <DialogHeader>
                     <DialogTitle>Change Password</DialogTitle>
                     <DialogDescription>
-                      Enter your current password and a new password to update your
-                      credentials.
+                      Enter your current password and a new password to update
+                      your credentials.
                     </DialogDescription>
                   </DialogHeader>
                   <Form {...passwordForm}>
@@ -496,7 +496,9 @@ export default function ProfilePage() {
                       />
                       <DialogFooter>
                         <Button type="submit" disabled={isChangingPassword}>
-                          {isChangingPassword ? "Changing..." : "Change Password"}
+                          {isChangingPassword
+                            ? "Changing..."
+                            : "Change Password"}
                         </Button>
                       </DialogFooter>
                     </form>
